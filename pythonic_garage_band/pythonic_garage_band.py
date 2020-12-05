@@ -55,6 +55,9 @@ class Drummer(Musician):
 
 
 class Band(ABC):
+    '''
+    to create a band instance
+    '''
     all_members=[]
 
     def __init__(self, name, members):
@@ -92,9 +95,9 @@ class Band(ABC):
 
 
 if __name__ == "__main__":
-    x = Guitarist("jason")
-    b = Bassist("adi")
-    c = Drummer("katy")
+    new_guitarist = Guitarist("jason")
+    new_bassist = Bassist("adi")
+    new_drummer = Drummer("katy")
 
     miami_Band = Band('miami',[])
     print(miami_Band.to_list())
